@@ -1,5 +1,29 @@
+
+.parent {
+background: aquamarine;
+height: 30px;
+position: relative;
+}
+
+.left-child {
+    background: red;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    width: 90%;
+}
+
+.right-child {
+    position: absolute;
+    right: 4%;
+}
+
+.gmail {
+    padding-right:10px;
+}
+
 img {
     display: block;
     margin: 0 auto;
-    margin-top: 180px;
 }
+
