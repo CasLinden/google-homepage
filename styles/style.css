@@ -70,8 +70,15 @@ box-shadow: 2px 2px 5px;
  text-align: center;
  color:grey;
  position: relative;
+ height: 112px;
+ width: 112px;
+ border-radius: 3px;
  /* vertical-align: bottom; doesnt work with block elements */
 }
+ 
+[class^="item"]:hover {
+    background-color: #c9c9c9;
+  }
 
 
 img.foo {
