@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   <link href="styles/style.css" rel="stylesheet" type="text/css">   
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 </head>
 
     <body>
         
-      <div class="parent">
-          <div class="right-child">
-          <div class="far-right-child"><a class="gmail" href="#">Gmail</a><a class="images" href="#">Images</a></div>
+      <div class="header">
+          <div class="right-header">
+            <div class="a-div">
+            <a class="gmail" href="#">Gmail</a>
+            <a class="images" href="#">Images</a>
+            <div class="dots-div"></div>
+            </div>   
           </div>
       </div>
 
@@ -18,21 +23,22 @@
       
       <div class=input-div>
         <div id="search" class="material-icons">&#xe8b6;</div>
+        <div id="mic"></div>
         <input class="input" type="search" placeholder="Search Google or type a URL">
-        <div id="mic-icon-div"><img class="mic-icon" src="https://img2.pngio.com/google-voice-logo-png-google-voice-search-png-716_1024.png"></div>
       </div>
       
+
       <div class="container">
-        <div class="item1"><div class="icon1"><img class="YT" src="https://image.similarpng.com/very-thumbnail/2020/07/Youtube-logo-with--new-style-on-transparent-background-PNG.png" alt="website icon"></div><div class="linktext"><span>Youtube</span></div></div>
-        <div class="item2"><div class="icon1"></div><p>#</p></div>
-        <div class="item3"><div class="icon1"></div><p>#</p></div>
-        <div class="item4"><div class="icon1"></div><p>#</p></div>
-        <div class="item5"><div class="icon1"></div><p>#</p></div>
-        <div class="item6"><div class="icon1"></div><p>#</p></div>
-        <div class="item7"><div class="icon1"></div><p>#</p></div>
-        <div class="item8"><div class="icon1"></div><p>#</p></div>
-        <div class="item9"><div class="icon1"></div><p>#</p></div>
-        <div class="item10"><div class="icon10"><img class="YT" src="https://image.flaticon.com/icons/png/128/3524/3524388.png" alt="website icon"></div><div class="linktext"><span>Add Shortcut</span></div></div>
+        <div class="item1"><div class="icon1"><img class="plus" src="https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg" alt="website icon"></div><div class="linktext"><span>The Odin Project</span></div></div>
+        <div class="item2"><div class="icon2"><img class="YT" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0" alt="website icon"></div><div class="linktext"><span>FreeCodeCamp</span></div></div>
+        <div class="item3"><div class="icon3"><img class="GH" src="https://cdn.iconscout.com/icon/free/png-256/github-3215409-2673827.png" alt="website icon"></div><div class="linktext"><span>GitHub</span></div></div>
+        <div class="item4"><div class="icon4"><img class="YT" src="https://cssreference.io/images/css-reference-icon.png" alt="website icon"></div><div class="linktext"><span>CSS Reference</span></div></div>
+        <div class="item5"><div class="icon5"><img class="YT" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAAAD////q6uqZmZlvb2/6+vrl5eX39/dERESDg4OdnZ1iYmLy8vJ7e3uQkJClpaXZ2dmrq6u/v7/S0tLKysq0tLTh4eGJiYk0NDRVVVVqamp0dHRMTEyurq7W1tYVFRUsLCwcHBwLCws8PDwkJCTDw8MoKChCQkIyMjLA4TPOAAAE0klEQVR4nO3d2XLiMBAF0BgCxLExxuAAhgRC1v//woEhIWw2WrrVEnXP41RNRbe8Sa2FuzsAAAAAAAAAAAAAAAAAAAAAAAAAgGC8P1TZoCyKohxOZu/SrSH2Gpd5Kzry9FxJt4pMUp6E2xtNptKNszcr05p4O93BQrqJVh7rrt6htAj1fp19KMT7vV/j74P/+ZbM40lcPYg1XUmVq+fb3a9lNq+q/mOZ937/qTeeS8eolTxp5quTxtJRLlroXr8m3TfpOGfeC8J8W/fSiU5MOsQBPYs4pbxB9zy6UWOOfJtnUTrXHvUTuDeRTrbzptKDMZNKZ/svYcu3kUinu2N7BH8MpeNtOtmsAaNcOh93wCi6+YCRcNmjzR5Q+HvB+5LZEX0Q5w4CRpFgtePeScDoSSzgzE3AKHoUCrhwFTCK+iIBH9wFjKKBQMAV/XC3Sf7lOuBrc7mXQbm88YAbz9/XG0aGbzzYqHBWKqaqiep7cVMpZqk5qeoM+S/kSDLgVh7zvnXYik4aOsWML2Apne5H2l7xBHyWTnZgzFGl4h/Sa2mRd8odDOl1fZBeyIl0nIu6dEMPRyNeffn6xgNuvh4kc1SstXtbKUEfwOmIV9/HrQeMIttFVtPe9b8hy7LQsfY+YDSyCigypNdkVVVdd6Wbr6Blk1BuSK8hNf/qr4MIaDMLlwzaNfwaaHAsvRGt15xhmKJ6kc50jH6F2Fg60gnyuWIfClJHqIf7vhSk/jzTBhxI5zlXkgb0sF4TFZQBvazXUF5DF2tM9BE+h57Wa9pkAX2t15Dtv3G2xkQX1V4xb+s1VuPDA1PpILWIPhbf/tZraDrePtdrSALe5WmrjnQph2Y5eFMlZCickH3XrXRBg7RTeol4T/yTOaB4T5x7U4abxdBNmAPK98Qz3oDyPXHm3V8edFR5d/V7EJB3K+2baEe1MxoX2StrwKVowJJokUkD0Z54i3F54i+mmdNeXrbjKkmqfjb86NbtCXCy85JjYrE3PF2ntoiL81sld7Lim2FyrVuzjPs7O5ro6rk5M4NhMXRT3+QzHv3csGmb/w3DEzC9ti9mPetnWd/VZr1p//6CxGIjhtwmPB1f5gGpqoHMzGsZnZV029WYb2jz6pyWepVxwLF00xWZL14I5IC6T+OA9utf3TCvuPlwgIkK4454IF8Ki5lFqe3ousyX2Hh03lUj44Ch3KR944ShfAzNlyoG8hhazH/LHAqhzWKlWyAvGouym3TT1VjMXnSk267GYsVwGIN78x5bMB+LpXmFhnbpKyPjq8g8v0nINGIgn8MtwyJ4KIPDLbMXalCnzxttwlhJt1qLQd8tkA/+nv4Yyo9zdDUkulVhf457VjXV/Pa/SDfYgN7EWyi10iNaazGD6bQd0RlLSZyJSGCpXrWh2+vimPKdGlC39MRMsa4R6q/pbKkVwR0sbeJTqVxG5yeT0lK4jC7P7OQwuzouDv+n5rLmgD23Z8uyWDX+hFdwQ4uLFg2rGEOZWrtmXjvgCG/wVGdSs2A6kIq3ksnFr2OIw8N6kwv3qt0ZXf7pn71zghwAN1qcFFXZdw4KWLUPH8gwh/hXJX+lYw9+z4lJf7wrOwZaxFCyvN9upLjlhFuLLNwiBgAAAAAAAAAAAAAAAAAAAADcqn9KZVD90jcDYwAAAABJRU5ErkJggg==" alt="website icon"></div><div class="linktext"><span>MDN Web Docs</span></div></div>
+        <div class="item6"><div class="icon6"><img class="SH" src="https://www.saashub.com/images/app/service_logos/64/410ecad5cbad/large.png?1565206822" alt="website icon"></div><div class="linktext"><span>explainshell.com</span></div></div>
+        <div class="item7"><div class="icon7"><img class="plus" src="https://cdn.worldvectorlogo.com/logos/stack-overflow.svg" alt="website icon"></div><div class="linktext"><span>Stack Overflow</span></div></div>
+        <div class="item8"><div class="icon8"><img class="YT" src="http://static.tweakers.net/ext/f/Z82w5Dxxe6frc2wgIF3uYNFq/full.png" alt="website icon"></div><div class="linktext"><span>Tweakers</span></div></div>
+        <div class="item9"><div class="icon9"><img class="YT" src="https://louisvillecollegiate.org/wp-content/uploads/2020/09/YouTube.png" alt="website icon"></div><div class="linktext"><span>YouTube</span></div></div>
+        <div class="item10"><div class="icon10"><img class= "plus" src="https://image.flaticon.com/icons/png/128/3524/3524388.png" alt="website icon"></div><div class="linktext"><span>Add Shortcut</span></div></div>
       </div>
  
     </body>

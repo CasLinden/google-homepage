@@ -3,35 +3,54 @@
     font-size: 1.2em;
     color: rgb(95, 99, 104);
 }
-
-.right-child {
-    position: absolute;
-    width:10%;
-    height: 40px;
-    right: 0;
+ .header {
+    width:100%;
+    display: block;
+    height: 45px;
 }
 
 
-.far-right-child {
-    padding: 11px 5px;
-    position: inline;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/538c71f8e4b0371e6dad5b7f/1402062372086-YX1EMH5GWV50R0JJNLXJ/ke17ZwdGBToddI8pDm48kOTkGqvVCD2Xi14O1G8u_cNZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVG3cJ8kPC9iop-oD7xMgRi0K2f09I1UAXuuoP5pT6tc98TC2sCTdZrEoSRToSZJAH8/image-asset.jpeg");
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: right 15px top 5px;
+.right-header {
+    height: 100%;
+    width: 11%;
+    float: right;
+    display: table;
+    font-family: 'Arimo', sans-serif;
 }
 
+.a-div {
+    height:100%;
+    width:90px;
+    float: right;
+    display: table;
+    vertical-align: middle;
+}
+
+.dots-div {
+    height: 100%;
+    width:40px;
+    float: left;
+    background-image: url('https://static.thenounproject.com/png/10563-200.png');
+    background-repeat: no-repeat;  
+    background-size: 25px 25px;
+    background-position: left 25% top 50%;
+} 
 
 a {
-    display: inline;
-    text-align: center;
-    padding: 5px;
-    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+    color: #2a2b2b;
     text-decoration: none;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .logo {
-    padding-top: 13.5%;
+    padding-top: 11.5%;
     background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
     background-repeat: no-repeat;
     background-position: left 50% bottom 0px;
@@ -42,7 +61,7 @@ a {
     position: relative;
     display: block;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     width: 561px;
     height: 44px;
 }
@@ -55,43 +74,49 @@ a {
     color: rgb(95, 99, 104);
 }
 
-.input {
-width: 100%;
-height: 100%;
-position: relative;
-display: inline-block;
-padding-inline-end: 44px;
-padding-inline-start: 52px;
-border-radius: 30px;
-border-style: none;
-box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-}
-
-.mic-icon-div {
+#mic {
     position: absolute;
-    height: 21px;
-    width: 21px;
+    top: 30%;
+    right: 2.5%;
+    z-index: 1;
+    width: 20px;
+    height: 26px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/334px-Google_mic.svg.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+   }
+
+.input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    padding-inline-end: 44px;
+    padding-inline-start: 52px;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 
 .container {
-    width: 465px;
+    width: 560px;
     height: 228px;
     margin: auto;
     margin-top: 30px;
     display: grid;
-    grid-gap:10px;
+    grid-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
  [class^="item"] {
- display: flex;
- color:grey;
- height: 112px;
- width: 112px;
- border-radius: 5px;
- flex-direction: column;   
- align-items: center; 
+    display: flex;
+    color:grey;
+    height: 112px;
+    width: 112px;
+    border-radius: 5px;
+    flex-direction: column;   
+    align-items: center; 
 }
  
 [class^="item"]:hover {
@@ -105,7 +130,6 @@ box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     width: 48px;
     background-color: rgba(241, 241, 244, 1);
     border-radius: 50%; 
-    
 }
 
 img.YT {
@@ -114,17 +138,39 @@ img.YT {
     width: 25px;
 }
 
-.linktext {
- display: flex;
- align-items: center;
- margin-top: 14px;
- padding: 2px 6px;
- width: 88px;  
+img.SH {
+    display: block;
+    margin: auto;
+    width: 20px;
 }
+
+img.GH {
+    display: block;
+    margin: auto;
+    width: 33px;
+}
+
+img.plus {
+    display: block;
+    margin: auto;
+    width: 15px;
+}
+
+.linktext {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    padding: 2px 6px;
+    width: 88px;  
+}   
 
 span {
-text-align: center;
-width: 100%;
+    text-align: center;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    font-size: 0.9em;
+    color: #2a2b2b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-
-
