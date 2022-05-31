@@ -3,6 +3,7 @@
     font-size: 1.2em;
     color: rgb(95, 99, 104);
 }
+
  .header {
     width:100%;
     display: block;
@@ -55,7 +56,6 @@ a:hover {
     background-repeat: no-repeat;
     background-position: left 50% bottom 0px;
 }   
-
 
 .input-div {
     position: relative;
@@ -111,7 +111,7 @@ a:hover {
 
  [class^="item"] {
     display: flex;
-    color:grey;
+    color:pink;
     height: 112px;
     width: 112px;
     border-radius: 5px;
